@@ -1,0 +1,8 @@
+{
+  "people": [
+    { "name": "Kuba", "id": 1, "description": "To ja Kuba, kliknij tutaj" },
+    { "name": "Wojtek", "id": 2, "description": "Lubie placki" },
+    { "name": "Maria", "id": 3, "description": "Losuje nagrody zawodowo" },
+    { "name": "Anna", "id": 4, "description": "Ja sobie siedzę" }
+  ]
+}

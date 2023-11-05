@@ -21,12 +21,17 @@ export default {
   name: "AboutView",
   data() {
     return {
-      people: [
-        { name: "Kuba", id: 1, description: "To ja Kuba, kliknij tutaj" },
-        { name: "Wojtek", id: 2, description: "Lubie placki" },
-        { name: "Maria", id: 3, description: "Losuje nagrody zawodowo" },
-      ],
+      people: [],
     };
+  },
+  mounted() {
+    fetch("http://localhost:3000/people", { method: "GET" })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        this.people = data;
+      })
+      .catch((e) => console.log(e));
   },
 };
 </script>
